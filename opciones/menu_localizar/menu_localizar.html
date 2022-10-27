@@ -1,0 +1,103 @@
+<!--ARREGLAR CSS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localiza tu Camion</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+      
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14557.57205500504!2d-65.30531841196289!3d-24.19301139616528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1666054074213!5m2!1ses!2sar" width="1320" height="620" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="mas-informacion">
+            <h1>Informacion del Camion</h1>
+            <p class="distancia">Distancia del Camion:</p>
+            <p class="tiempo">Tiempo de Llegada:</p>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="logo_content">  
+            <div class="logo">
+                <img src="img/logo.png" class="logo_img">
+                <div class="logo_name">MasAmbiente</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#" >
+                   <!--<i class='bx bxs-map-pin'></i>-->
+                   <img src="img/recorido.png" alt="Tu Camion">
+                    <span class="links_name">Localiza tu Camion</span>
+                </a>
+                <span class="tooltip">Localiza tu Camion</span>
+            </li>
+            <li>
+                <a href="#" >
+                    <!--<i class='bx bxs-note'></i> -->
+                    <img src="img/basura.png" alt="">
+                    <span class="links_name">Recomendaciones</span>
+                </a>
+                <span class="tooltip">Recomendaciones</span>
+            </li>
+            <li>
+                <a href="#" >
+                   <!-- <i class='bx bx-question-mark' ></i>--> 
+                   <img src="img/faq.png">
+                    <span class="links_name">Preguntas Frecuentes</span>
+                </a>
+                <span class="tooltip">Preguntas Frecuentes</span>
+            </li>
+            <li>
+                <a href="#" >
+                    <!--<i class='bx bxs-contact' ></i> -->
+                    <img src="img/contacto.png">
+                    <span class="links_name">Contacto</span>
+                </a>
+                <span class="tooltip">Contacto</span>
+            </li>
+            <li>
+                <a href="#" >
+                    <!--<i class='bx bx-log-out'></i>-->
+                    <img src="img/logout.png" alt="">
+                    <span class="links_name">Cerrar Sesion</span>
+                </a>
+                <span class="tooltip">Cerrar Sesion</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <!--Aqui va una imagen del usuario-->
+                   
+                    <div class="name_job">
+                        <div class="name">Prueba</div>
+                    <div class="job">Usuario Logueado</div>
+                    </div>
+                </div>
+                <i class='bx bxs-user user' id="user"></i>
+            </div>
+        </div>
+       
+    </div>
+    
+    <script>
+            let btn= document.querySelector("#btn");
+            let sidebar= document.querySelector(".sidebar");
+           btn.onclick = function() {
+            sidebar.classList.toggle("active");
+           }
+    </script>
+    <!--
+<p class="hw">Hola mundo</p>
+    -->
+    
+</html>

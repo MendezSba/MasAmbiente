@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Asap', sans-serif;
+    font-style: normal;
+    color: #000;
+    font-size: 16px;
+    background:url(../img/fondo2.png) no-repeat center top;
+   background-size: 1370px 630px;
+}
+.logo{
+    margin: 8px 35px 0px;
+    height: 60px;
+    width: 75px;
+    float: left;
+    /*HACER GIRAR*/
+    animation-name: girarb;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    
+    animation-timing-function: linear;
+    
+}
+@keyframes girarb{
+    from{
+        transform:rotateY(0deg);
+    
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+h1{
+    
+    font-size: 60px;
+}
+.texto {
+    text-shadow: 0px 4px 8px rgb(170, 169, 169);
+    clear:right;
+    height: 40vh;
+    padding: 1%;
+    /*Centrar el contenido de un contenedor*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:100px;
+    color: #000;
+}
+.texto p{
+    padding: 2%;
+    width: 75%;
+    text-align: center;
+}
+.botones{
+    position: absolute;
+    top: 79%;
+    left:51%;
+    display: flex;
+    flex-direction: row;
+    
+    transform: translate(-50%,-50%);
+}
+.botones a{
+    width: 160px;
+    height: 160px;
+    
+    display: inline-block;
+    margin:48px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;  
+    border: 3px solid #000;
+    overflow: hidden;
+}
+/*Movimientos de los botones*/
+.botones a::before{
+    content: url(../img/btn_recorrido.png);
+    display: block;
+    margin: 0;
+    transition: all ease-in-out .3s;
+}
+.botones a:hover::before{
+   margin-top: -160px;
+}
+.botones a::after{
+    content: url(../img/btn_recorrido.png);
+}
+.botones a.OP2::before{
+    content: url(../img/btn_recomendar.png);
+}
+.botones a.OP2::after{
+    content: url(../img/btn_recomendar.png);
+    background: transparent;
+}
+.botones a.OP3::before{
+    content: url(../img/btn_faq.png);
+}
+.botones a.OP3::after{
+    content: url(../img/btn_faq.png);
+}
+.botones a.OP4::before{
+    content: url(../img/btn_contactos.png);
+}
+.botones a.OP4::after{
+    content: url(../img/btn_contactos.png);
+}
+
+
+

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(231, 231, 231);
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background:#d3d3d3;
+     font-family:'Asap', sans-serif;
+}
+.contenedor .avatar{
+    width: 125px;
+    height: 125px;
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    top: 190px;
+	padding:25px 15px;/*Arreglar la dimension del logo*/
+    left: calc(50% - 50px);
+    background-color:  #1ED760;
+}
+.contenedor{
+    width: 120px;
+    height: 120px;
+    background: transparent;
+    margin: 0 auto;
+    
+    left: -10px;
+    position: relative;
+    border-color: #000 solid;
+   top:-630px;
+}
+
+.formulario{
+    width: 380px;
+    height: 480px;
+    background: #000;
+    margin: auto auto;
+    position: relative;
+    /*padding: 4px;*/
+    bottom:-100px;
+    /*oculta una opcion*/
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.boton{
+    /*border: 2px solid;=>borde negro del toggle*/
+    width: 235px;
+    margin: 95px auto;/*Toggle*/
+    position: relative;
+    box-shadow: 0 0 20px 3px #121212;
+    border-radius: 35px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border:0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 124px;
+    height: 100%;
+    background:  #1ED760;
+    border-radius: 30px;
+    transition: 1s;
+}
+.login-form{
+    border: 0px solid;
+    top: 170px;/*Ubicacion de las opciones*/
+    position:absolute;
+    width:280px;
+    transition: 1s;
+}
+.form-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 4px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #1ED760;
+    outline: none;
+    background: transparent;
+}
+.submit{
+    width: 85%;
+    padding: 10px 35px;
+    cursor: pointer;
+    display:block;
+    margin: auto;
+    background:  #1ED760;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+}
+.checkbox{
+    margin: 30px 5px;
+} 
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 65px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+}

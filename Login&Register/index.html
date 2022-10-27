@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="css/style.css"> 
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- <div class="contenedor"></div>-->
+  
+        <div class="formulario">
+            
+            
+            <div class="boton">
+                <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Ingresar</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Registrar</button>
+                     
+            </div>
+            
+            <form class="login-form" id="login">
+                <input type="text" class="form-field" placeholder="Nombre de Usuario" required>
+                <input type="password" class="form-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="checkbox"><span>Recordar Contraseña</span>
+                <button type="submit" class="submit">Ingresar</button>
+            </form>
+
+            <form class="login-form" id="register">
+                <input type="text" class="form-field" placeholder="Nombre de Usuario" required>
+                <input type="email" class="form-field" placeholder="Correo Electronico" required>
+                <input type="password" class="form-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="checkbox"><span>Aceptar Terminos y Condiciones</span>
+                <center>
+                    <button type="submit" class="submit">Registrar</button>
+                </center>
+            </form>
+           
+        </div>
+        
+        <div class="contenedor">
+            <img class="avatar" src="img/logo.png" alt="logo de +Ambiente">
+        </div> 
+    <script src="login&register.js"></script>
+</body>
+</html> 

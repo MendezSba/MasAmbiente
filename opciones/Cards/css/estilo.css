@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #eee;
+    font-size: 16px;
+    font-family: sans-serif;
+    
+}
+.cards-conteiner{
+  
+    padding-left: 8%;
+}
+.encabezados{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.recomendar{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 10px 440px;
+    color: #9c9c9c;
+   
+    width: 29%;
+}
+
+.video-img{
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 20%;
+    /*texto*/
+    font-size: 20px;
+    font-weight: bolder;
+    background: red;
+    height: 400px;
+    width: 800px;
+    margin: 20px;
+}
+.recomendar::after,.recomendar::before{
+    content: '';
+    position:absolute;
+    width: 150px;
+    height: 3px;
+    background-color: currentColor;
+    top:0.6em;
+}
+.recomendar::before{
+    left: -170px;
+}
+.recomendar::after{
+    right: -170px;
+}
+
+/*traslada la barra de progresion?*/
+
+.grupos{
+    margin: 0 auto;
+    width: 780px;
+    height: auto;
+    padding: 10px;
+}
+.grupos li{
+    position: relative;
+    list-style: none;
+    background: #95dd8b;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px 0 #0001;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+.grupos li:hover{
+    /* efecto de acercamiento a la card*/
+    transform: scale(1.04);
+    box-shadow: 0 4px 14px 0 #0005;
+}
+.grupos .card{
+    overflow: hidden;
+    display: block;
+}
+.grupos .image-session{
+    float: left;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.grupos .image-session .image{
+    width: 280px;
+    height: 220px;
+    display: block;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.grupos .meta-session{
+    position: relative;
+    padding: 15px;
+    display: block;
+    height: 220px;
+
+}
+
+.meta-session .body .titulo{
+    height: 60px;
+    overflow: hidden;
+    font-size: 24px;
+}
+.meta-session .body .desc{
+    height: 45px;
+    
+    font-size: 13px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+
+@media screen and (max-width:780px) {
+    .grupos{
+        width: 96%;  
+    }
+    .grupos li:hover{
+        /* efecto de acercamiento a la card*/
+        transform: none;
+        box-shadow: 0 3px 4px 0 #0001;
+    }
+}
+@media screen and (max-width:560px) {
+     .grupos .image-session{
+           float: none;
+           margin-right: 0; 
+      }
+     .grupos .image-session .image{
+        width: 100%;
+     }  
+}
